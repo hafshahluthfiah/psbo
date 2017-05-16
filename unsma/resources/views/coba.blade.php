@@ -18,9 +18,11 @@
 @stop
 
 @section('sidebar-left')
+  
+  <input type="image" class="img-circle img-responsive img-center" src="https://1.bp.blogspot.com/-eRBVipAhYiw/WRndFbivgQI/AAAAAAAAAQQ/Bmv6_qACLpwzNqIvqykeVMvgwi_ijwWgQCLcB/s1600/math.jpg" width="200px" height="200px" alt="">
   <h4>Matematika</h4>
-  <p>...</p>
 
+  <img class="img-circle img-responsive img-center" src="https://4.bp.blogspot.com/-hGgjimFyjxE/WRndA3aQS_I/AAAAAAAAAQI/NR7VnYJJtHIjFYTrXGtheHNxsoZanuaXwCLcB/s1600/fis.jpg" width="200px" height="200px" alt="">
   <h4>Fisika</h4>
   <p>...</p>
 

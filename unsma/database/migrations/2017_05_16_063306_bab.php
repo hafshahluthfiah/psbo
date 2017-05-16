@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Mapel extends Migration
+class Bab extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class Mapel extends Migration
      */
     public function up()
     {
-        Schema::create('mapel', function (Blueprint $table) {
-            $table->increments('id_mapel');
-            $table->string('nama_mapel');
+        Schema::create('bab', function (Blueprint $table) {
+            $table->increments('id_bab');
+            $table->string('nama_bab');
+            $table->string('materi');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -28,6 +29,6 @@ class Mapel extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mapel');
+        Schema::dropIfExists('bab');
     }
 }

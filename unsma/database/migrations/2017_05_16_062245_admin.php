@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Mapel extends Migration
+class Admin extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class Mapel extends Migration
      */
     public function up()
     {
-        Schema::create('mapel', function (Blueprint $table) {
-            $table->increments('id_mapel');
-            $table->string('nama_mapel');
+        Schema::create('admin', function (Blueprint $table) {
+            $table->increments('admin_id');
+            $table->string('admin_name');
+            $table->string('admin_email')->unique();
+            $table->string('admin_password');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -28,6 +30,6 @@ class Mapel extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mapel');
+        Schema::dropIfExists('admin');
     }
 }

@@ -20,12 +20,16 @@ Route::get('/home', function () {
 });
 
 Route::get('/mapel', function () {
-    return view('auth/login');
+    return view('register');
 });
 
 Route::get('/login', function () {
-    return view('/auth/login');
+    return view('login');
 });
 
 Auth::routes();
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
